@@ -1,8 +1,16 @@
-def selection_sort(lista):
-    for i in range(len(lista)):
+lista = int(input("Digita el tamaño de la lista: "))
+numeros = []
+
+for _ in range(lista):
+    numero = int(input("Digita un número: "))
+    numeros.append(numero)
+
+def selection_sort(numeros):
+    for i in range(len(numeros)):
         min_index = i
-        for j in range(i + 1, len(lista)):
-            if lista[j] < lista[min_index]:
+        for j in range(i + 1, len(numeros)):
+            if numeros[j] < numeros[min_index]:
                 min_index = j
-        lista[i], lista[min_index] = lista[min_index], lista[i]
-    return lista
+        numeros[i], numeros[min_index] = numeros[min_index], numeros[i]
+    return numeros
+print(selection_sort(numeros))
