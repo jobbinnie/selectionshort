@@ -10,6 +10,6 @@ def selection_sort(ingreso):
         for j in range(i + 1, largo):
             if ingreso[j] < ingreso[min_index]:
                 min_index = j         
-            ingreso[i], ingreso[min_index] = ingreso[min_index], ingreso[i]
+        ingreso[i], ingreso[min_index] = ingreso[min_index], ingreso[i]
     return ingreso
 print(selection_sort(ingreso))
