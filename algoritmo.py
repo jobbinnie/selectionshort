@@ -3,7 +3,7 @@ lista_limpia = lista.replace(",", " ").split()
 ingreso = [int(x) for x in lista_limpia]
 
 def selection_sort(ingreso):
-    largo= len(ingreso)
+    largo = len(ingreso)
     for i in range(largo - 1):
         min_index = i
 
